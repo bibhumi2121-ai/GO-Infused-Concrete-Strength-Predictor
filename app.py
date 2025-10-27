@@ -25,13 +25,17 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ---------------------- Title and Header ----------------------
+# ---------------------- Logo + Title ----------------------
 st.markdown(
     """
+    <div style="text-align:center;">
+        <img src="logo.png" width="120" alt="Logo">
+    </div>
     <div style="background-color:#2c3e50;padding:15px;border-radius:8px">
-    <h2 style="color:white;text-align:center;">
-    🧱 GO-Infused Concrete Compressive Strength Predictor
-    </h2></div>
+        <h2 style="color:white;text-align:center;">
+        GO-Infused Concrete Compressive Strength Predictor
+        </h2>
+    </div>
     """,
     unsafe_allow_html=True
 )
@@ -97,7 +101,7 @@ st.markdown("---")
 st.markdown(
     f"""
     <div style="text-align:center; color:gray; font-size:14px;">
-    Developed by <b>Bibhu (2025)</b> <i>bibhumis2121@gmail.com</i>
+    Developed by <b>Bibhu (2025)</b> <i>bibhumi2121@gmail.com</i>
     </div>
     """,
     unsafe_allow_html=True
