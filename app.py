@@ -103,8 +103,9 @@ st.markdown("---")
 st.markdown(
     f"""
     <div style="text-align:center; color:gray; font-size:14px;">
-    Developed by <b>Bibhu Prasad Mishra (2025)</b>
+    Developed by <b>Bibhu Prasad Mishra (2025)</b> bibhumi2121@gmail.com
     </div>
     """,
     unsafe_allow_html=True
 )
+
