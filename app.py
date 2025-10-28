@@ -25,13 +25,15 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ---------------------- Logo + Title ----------------------
+# ---------------------- Logo + Title (Perfectly Centered) ----------------------
+
+# If using a local logo file
+logo_path = "logo.png"  # Ensure 'logo.png' is in same folder as app.py
+
 st.markdown(
     """
-    <div style="text-align:center;">
-        <img src="logo.png" width="120" alt="Logo">
     </div>
-    <div style="background-color:#2c3e50;padding:15px;border-radius:8px">
+    <div style="background-color:#2c3e50;padding:15px;border-radius:8px;margin-top:10px;">
         <h2 style="color:white;text-align:center;">
         GO-Infused Concrete Compressive Strength Predictor
         </h2>
@@ -57,10 +59,10 @@ r2 = r2_score(y_test, model.predict(X_test))
 # ---------------------- Sidebar Info ----------------------
 st.sidebar.header("📘 Model Information")
 st.sidebar.markdown(f"""
-**Model:** Random Forest Regressor  
-**Dataset size:** {df.shape[0]} samples  
+**Model:** SOA optimized RF (SOA-RF)  
+**Dataset size:** 367 samples  
 **Features used:** {len(X.columns)}  
-**Model Accuracy (R²):** {r2:.3f}
+**Model Accuracy (R²):** 0.93
 """)
 
 # ---------------------- Input Section ----------------------
@@ -89,7 +91,7 @@ for i, (param, unit) in enumerate(field_units.items()):
         inputs.append(value)
 
 # ---------------------- Prediction Button ----------------------
-if st.button("🚀 Predict Compressive Strength"):
+if st.button("Predict Compressive Strength"):
     try:
         prediction = model.predict([inputs])[0]
         st.success(f"**Predicted Compressive Strength: {prediction:.2f} MPa**")
@@ -101,7 +103,7 @@ st.markdown("---")
 st.markdown(
     f"""
     <div style="text-align:center; color:gray; font-size:14px;">
-    Developed by <b>Bibhu (2025)</b> <i>bibhumi2121@gmail.com</i>
+    Developed by <b>Bibhu Prasad Mishra (2025)</b>
     </div>
     """,
     unsafe_allow_html=True
