@@ -25,12 +25,11 @@ st.set_page_config(
 # ---------------------- Title Section ----------------------
 st.markdown(
     """
-    <div style="background-color:#2c3e50;padding:18px;border-radius:8px;margin-top:10px;">
+    <div style="background-color:#0f1896;padding:18px;border-radius:8px;margin-top:10px;">
         <h2 style="color:white;text-align:center;margin-bottom:0;">
         GO-Infused Concrete Compressive Strength Predictor
         </h2>
         <p style="color:#bdc3c7;text-align:center;margin-top:4px;font-size:15px;">
-        A Machine Learning-based Framework for Graphene Oxide Concrete Mix Design
         </p>
     </div>
     """,
@@ -95,7 +94,7 @@ for i, param in enumerate(fields):
 st.write("")  # spacing
 
 # ---------------------- Predict Button ----------------------
-predict_button = st.button("🔹 Predict Compressive Strength", use_container_width=True)
+predict_button = st.button("Predict Compressive Strength", use_container_width=True)
 
 if predict_button:
     try:
@@ -116,9 +115,10 @@ st.markdown(
         <a href="mailto:bibhumi2121@gmail.com" style="color:gray;text-decoration:none;">
         bibhumi2121@gmail.com
         </a><br>
-        <span style="font-size:12px;">GO-Concrete Research | Machine Learning in Sustainable Materials</span>
+        <span style="font-size:12px;"></span>
         </p>
     </div>
     """,
     unsafe_allow_html=True
 )
+
