@@ -4,7 +4,7 @@ Created on Mon Oct 27 11:40:48 2025
 @author: Bibhu
 
 GO-Infused Concrete Compressive Strength Predictor
-Publication-ready Streamlit Interface
+Publication-ready Streamlit Interface (Units Removed)
 ===========================================================
 """
 
@@ -70,26 +70,26 @@ st.sidebar.info("Developed for research on Graphene Oxide-infused concrete (GOIC
 # ---------------------- Input Section ----------------------
 st.subheader("🔹 Enter Mix Design Parameters")
 
-field_units = {
-    "Cement (kg/m³)": "kg/m³",
-    "Water (kg/m³)": "kg/m³",
-    "Fine Aggregate (kg/m³)": "kg/m³",
-    "Coarse Aggregate (kg/m³)": "kg/m³",
-    "Superplasticizer (% of binder)": "%",
-    "Fly Ash (% of binder)": "%",
-    "Silica Fume (% of binder)": "%",
-    "Steel Fiber (% by volume)": "%",
-    "Graphene Oxide (% by wt. of cement)": "%",
-    "Curing Duration (days)": "days"
-}
+# Define input fields (no unit labels below)
+fields = [
+    "Cement (kg/m³)",
+    "Water (kg/m³)",
+    "Fine Aggregate (kg/m³)",
+    "Coarse Aggregate (kg/m³)",
+    "Superplasticizer (% of binder)",
+    "Fly Ash (% of binder)",
+    "Silica Fume (% of binder)",
+    "Steel Fiber (% by volume)",
+    "Graphene Oxide (% by wt. of cement)",
+    "Curing Duration (days)"
+]
 
 cols = st.columns(2)
 inputs = []
 
-for i, (param, unit) in enumerate(field_units.items()):
+for i, param in enumerate(fields):
     with cols[i % 2]:
         val = st.number_input(f"{param}", min_value=0.0, step=0.1, format="%.3f")
-        st.caption(f"Unit: **{unit}**")
         inputs.append(val)
 
 st.write("")  # spacing
