@@ -69,16 +69,16 @@ st.sidebar.markdown(f"""
 st.subheader("🔹 Enter Mix Design Parameters")
 
 field_units = {
-    "Cement (kg/m³)": "kg/m³",
-    "Water (kg/m³)": "kg/m³",
-    "Fine Aggregate (kg/m³)": "kg/m³",
-    "Coarse Aggregate (kg/m³)": "kg/m³",
-    "Superplasticizer (% of binder)": "%",
-    "Fly Ash (% of binder)": "%",
-    "Silica Fume (% of binder)": "%",
-    "Steel Fiber (% by volume)": "%",
-    "Graphene Oxide (% by wt. of cement)": "%",
-    "Curing Duration (days)": "days"
+    "Cement (kg/m³)": ,
+    "Water (kg/m³)": ,
+    "Fine Aggregate (kg/m³)": ,
+    "Coarse Aggregate (kg/m³)": ,
+    "Superplasticizer (% of binder)": ,
+    "Fly Ash (% of binder)": ,
+    "Silica Fume (% of binder)": ,
+    "Steel Fiber (% by volume)": ,
+    "Graphene Oxide (% by wt. of cement)": ,
+    "Curing Duration (days)": 
 }
 
 cols = st.columns(2)
@@ -108,4 +108,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
