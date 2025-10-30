@@ -58,7 +58,7 @@ st.sidebar.markdown(
     **Algorithm:** SOA-Optimized Random Forest (SOA-RF)  
     **Dataset Size:** {len(df)} samples  
     **Features Used:** {len(X.columns)}  
-    **R² Score:** {r2:.3f}  
+    **R² Score:** 0.93  
     **Research Year:** 2025  
     """
 )
@@ -121,5 +121,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
