@@ -63,8 +63,8 @@ st.sidebar.markdown(
     """
 )
 
-st.sidebar.markdown("---")
-st.sidebar.info("Developed for research on Graphene Oxide-infused concrete (GOIC) reliability analysis.")
+#st.sidebar.markdown("---")
+#st.sidebar.info("Developed for research on Graphene Oxide-infused concrete (GOIC) reliability analysis.")
 
 # ---------------------- Input Section ----------------------
 st.subheader("🔹 Enter Mix Design Parameters")
@@ -121,4 +121,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
